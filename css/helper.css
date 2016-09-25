@@ -4,3 +4,17 @@ div
     box-sizing: border-box;
     min-height: 100px;
 }
+
+div > div
+{
+    border: plum 2px solid;
+    box-sizing: border-box;
+    min-height: 100px;
+}
+
+div > div > div
+{
+    border: red 2px solid;
+    box-sizing: border-box;
+    min-height: 100px;
+}

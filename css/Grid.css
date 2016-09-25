@@ -1,12 +1,27 @@
+img {
+  width: 100%; }
+
 .container, .container_Auto {
   max-width: 1024px;
   width: 100%; }
+
+.container:after, .container_Auto:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both; }
 
 .container_Auto {
   margin: auto; }
 
 .container .row, .container_Auto .row {
   width: 100%; }
+
+.row:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both; }
 
 .columns, .row {
   margin-bottom: 5px; }

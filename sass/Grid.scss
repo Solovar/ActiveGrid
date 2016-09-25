@@ -1,9 +1,22 @@
 $grid_collums: 160px;
 
+img
+{
+  width: 100%;
+}
+
 .container
 {
   max-width: 1024px;
   width: 100%;
+}
+
+.container:after
+{
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .container_Auto
@@ -15,6 +28,13 @@ $grid_collums: 160px;
 .container .row
 {
   width: 100%;
+}
+.row:after
+{
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .columns, .row
