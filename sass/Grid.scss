@@ -1,0 +1,114 @@
+$grid_collums: 160px;
+
+.container
+{
+  max-width: 1024px;
+  width: 100%;
+}
+
+.container_Auto
+{
+  @extend .container;
+  margin: auto;
+}
+
+.container .row
+{
+  width: 100%;
+}
+
+.columns, .row
+{
+ margin-bottom: 5px;
+}
+.columns
+{
+  float: left;
+}
+
+.one
+{
+  width: 10px / $grid_collums * 100%;
+}
+
+.two
+{
+  width: 20px / $grid_collums * 100%;
+}
+
+.three
+{
+  width: 30px / $grid_collums * 100%;
+}
+
+.four
+{
+  width: 40px / $grid_collums * 100%;
+}
+
+.five
+{
+  width: 50px / $grid_collums * 100%;
+}
+
+.six
+{
+  width: 60px / $grid_collums * 100%;
+}
+
+.seven
+{
+  width: 70px / $grid_collums * 100%;
+}
+
+.eight
+{
+  width: 80px / $grid_collums * 100%;
+}
+
+.nine
+{
+  width: 90px / $grid_collums * 100%;
+}
+
+.ten
+{
+  width: 100px / $grid_collums * 100%;
+}
+
+.eleven
+{
+  width: 110px / $grid_collums * 100%;
+}
+
+.twelve
+{
+  width: 120px / $grid_collums * 100%;
+}
+
+.thirteen
+{
+  width: 130px / $grid_collums * 100%;
+}
+
+.fourteen
+{
+  width: 140px / $grid_collums * 100%;
+}
+
+.fifteen
+{
+  width: 150px / $grid_collums * 100%;
+}
+
+.sixteen
+{
+  width: 160px / $grid_collums * 100%;
+}
+
+@media (max-width: 550px) {
+  .one, .two, .three, .four, .five, .fifteen, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen
+  {
+    width: 100%;
+  }
+};

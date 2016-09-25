@@ -1,0 +1,6 @@
+div
+{
+    border: black 2px solid;
+    box-sizing: border-box;
+    min-height: 100px;
+}
