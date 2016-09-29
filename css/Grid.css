@@ -5,29 +5,36 @@ img {
   max-width: 1024px;
   width: 100%; }
 
-.container:after, .container_Auto:after {
-  content: " ";
-  display: block;
-  height: 0;
-  clear: both; }
-
+/*.container > .one-third, .row > .one-third
+{
+  margin-right: 1%;
+}
+.container > .one-third ~ .one-third, .row > .one-third ~ .one-third
+{
+  margin-right: 0;
+} */
 .container_Auto {
   margin: auto; }
 
-.container .row, .container_Auto .row {
+.row {
   width: 100%; }
 
-.row:after {
+.container:after, .container_Auto:after, .row:after {
   content: " ";
   display: block;
   height: 0;
   clear: both; }
 
-.columns, .row {
+.columns, .column {
+  float: left;
   margin-bottom: 5px; }
 
-.columns {
-  float: left; }
+.one-half {
+  width: 50%; }
+
+.one-third {
+  width: 33%;
+  margin-right: 0.3333%; }
 
 .one {
   width: 6.25%; }
@@ -78,7 +85,37 @@ img {
   width: 100%; }
 
 @media (max-width: 550px) {
-  .one, .two, .three, .four, .five, .fifteen, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen {
-    width: 100%; } }
+  .one, .two, .three, .four, .five, .fifteen, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .one-third, .one-half {
+    width: 100%;
+    margin-left: 0 !important; } }
+.offset-by-one {
+  margin-left: 6.25%; }
+
+.offset-by-two {
+  margin-left: 12.5%; }
+
+.offset-by-three {
+  margin-left: 18.75%; }
+
+.offset-by-four {
+  margin-left: 25%; }
+
+.offset-by-five {
+  margin-left: 31.25%; }
+
+.offset-by-six {
+  margin-left: 37.5%; }
+
+.offset-by-seven {
+  margin-left: 43.75%; }
+
+.offset-by-eight {
+  margin-left: 50%; }
+
+.offset-by-nine {
+  margin-left: 56.25%; }
+
+.offset-by-ten {
+  margin-left: 62.5%; }
 
 /*# sourceMappingURL=Grid.css.map */

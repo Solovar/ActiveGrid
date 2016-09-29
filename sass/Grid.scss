@@ -10,14 +10,14 @@ img
   max-width: 1024px;
   width: 100%;
 }
-
-.container:after
-{
-  content: " ";
-  display: block;
-  height: 0;
-  clear: both;
-}
+  /*.container > .one-third, .row > .one-third
+  {
+    margin-right: 1%;
+  }
+  .container > .one-third ~ .one-third, .row > .one-third ~ .one-third
+  {
+    margin-right: 0;
+  } */
 
 .container_Auto
 {
@@ -25,11 +25,12 @@ img
   margin: auto;
 }
 
-.container .row
+.row
 {
   width: 100%;
 }
-.row:after
+
+.container:after, .row:after
 {
   content: " ";
   display: block;
@@ -37,13 +38,26 @@ img
   clear: both;
 }
 
-.columns, .row
-{
- margin-bottom: 5px;
-}
 .columns
 {
-  float: left;
+ float: left;
+ margin-bottom: 5px;
+}
+
+.column
+{
+  @extend .columns;
+}
+
+.one-half
+{
+  width: 50%;
+}
+
+.one-third
+{
+  width: 33%;
+  margin-right: 0.3333%;
 }
 
 .one
@@ -127,8 +141,59 @@ img
 }
 
 @media (max-width: 550px) {
-  .one, .two, .three, .four, .five, .fifteen, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen
+  .one, .two, .three, .four, .five, .fifteen, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .one-third, .one-half
   {
     width: 100%;
+    margin-left: 0 !important;
   }
 };
+
+.offset-by-one
+{
+  margin-left: 10px / $grid_collums * 100%;
+}
+
+.offset-by-two
+{
+  margin-left: 20px / $grid_collums * 100%;
+}
+
+.offset-by-three
+{
+  margin-left: 30px / $grid_collums * 100%;
+}
+
+.offset-by-four
+{
+  margin-left: 40px / $grid_collums * 100%;
+}
+
+.offset-by-five
+{
+  margin-left: 50px / $grid_collums * 100%;
+}
+
+.offset-by-six
+{
+  margin-left: 60px / $grid_collums * 100%;
+}
+
+.offset-by-seven
+{
+  margin-left: 70px / $grid_collums * 100%;
+}
+
+.offset-by-eight
+{
+  margin-left: 80px / $grid_collums * 100%;
+}
+
+.offset-by-nine
+{
+  margin-left: 90px / $grid_collums * 100%;
+}
+
+.offset-by-ten
+{
+  margin-left: 100px / $grid_collums * 100%;
+}
